@@ -57,18 +57,21 @@ jobs:
           cd backend
           python manage.py test
 
-      - name: Run tests with coverage
+      - name: Run tests with coverage and upload to Codecov
         run: |
           cd backend
           coverage run manage.py test
           coverage report
           coverage xml
+       env:
+         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: backend/coverage.xml
-          flags: unittests
-          name: codecov-coverage-report
+         token: ${{ secrets.CODECOV_TOKEN }}
+         files: backend/coverage.xml
+         flags: unittests
+         name: codecov-coverage-report
+         verbose: true
 
