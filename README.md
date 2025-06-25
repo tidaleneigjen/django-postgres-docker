@@ -2,6 +2,8 @@
 
 This project is a minimal Django setup running with Postgres in Docker.
 
+![CI](https://github.com/tidaleneigjen/django-postgres-docker/actions/workflows/ci.yml/badge.svg)
+
 ## 🚀 Quickstart
 
 ### 1. Clone and Setup
@@ -26,7 +28,9 @@ docker compose up --build
 
 This app will be available at http://localhost:8000.
 
-### 4. Database
+## Misc
+
+### Database
 Postgres runs in a container and persists data in the pgdata/ volume.
 
 
