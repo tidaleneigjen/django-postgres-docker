@@ -40,7 +40,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
@@ -63,15 +63,14 @@ jobs:
           coverage run manage.py test
           coverage report
           coverage xml
-       env:
-         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
         with:
-         token: ${{ secrets.CODECOV_TOKEN }}
-         files: backend/coverage.xml
-         flags: unittests
-         name: codecov-coverage-report
-         verbose: true
-
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: backend/coverage.xml
+          flags: unittests
+          name: codecov-coverage-report
+          verbose: true
