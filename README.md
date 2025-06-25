@@ -3,6 +3,7 @@
 This project is a minimal Django setup running with Postgres in Docker.
 
 ![CI](https://github.com/tidaleneigjen/django-postgres-docker/actions/workflows/ci.yml/badge.svg)
+[![codecov](https://codecov.io/gh/tidaleneigjen/django-postgres-docker/branch/main/graph/badge.svg)](https://codecov.io/gh/tidaleneigjen/django-postgres-docker)
 
 ## 🚀 Quickstart
 
