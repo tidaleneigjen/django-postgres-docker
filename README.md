@@ -4,7 +4,9 @@ This project is a minimal Django setup running with Postgres in Docker.
 
 ![CI](https://github.com/tidaleneigjen/django-postgres-docker/actions/workflows/ci.yml/badge.svg)
 [![codecov](https://codecov.io/gh/tidaleneigjen/django-postgres-docker/branch/main/graph/badge.svg)](https://codecov.io/gh/tidaleneigjen/django-postgres-docker)
-![Docker Pulls](https://img.shields.io/docker/pulls/yourdockerhubusername/safetyapp)
+![Docker Pulls](https://img.shields.io/docker/pulls/tidaleneigjen/django-postgres-docker)
+![Docker Build](https://github.com/tidaleneigjen/django-postgres-docker/actions/workflows/docker-build.yml/badge.svg)
+
 
 ## 🚀 Quickstart
 
